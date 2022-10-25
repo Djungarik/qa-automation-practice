@@ -1,0 +1,15 @@
+<testsuite name="Mocha Tests" tests="5" failures="0" errors="1" skipped="0" timestamp="Tue, 05 Jul 2022 15:59:36 GMT" time="14.937">
+<testcase classname="Test with backend" name="verify correct request and response" time="4.767"/>
+<testcase classname="Test with backend" name="intercepting and modifying the request and response" time="0"><failure>expected &#x27;Intercepted&#x27; to equal &#x27;Complete&#x27;
+
+      + expected - actual
+
+      -&#x27;Intercepted&#x27;
+      +&#x27;Complete&#x27;
+      
+AssertionError: expected &#x27;Intercepted&#x27; to equal &#x27;Complete&#x27;
+    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress\e2e\firstTest.spec.js:137:28)</failure></testcase>
+<testcase classname="Test with backend" name="should give tags with routing object" time="1.413"/>
+<testcase classname="Test with backend" name="verify global feed likes count" time="1.215"/>
+<testcase classname="Test with backend" name="delete a new article in a global feed" time="4.155"/>
+</testsuite>
