@@ -1,0 +1,20 @@
+{
+  "boards": [
+    {
+      "name": "space travel plan",
+      "user": 0,
+      "id": 39508929046,
+      "starred": false,
+      "created": "2022-11-19"
+    }
+  ],
+  "tasks": [],
+  "users": [
+    {
+      "email": "berezhnoy.tim@gmail.com",
+      "password": "$2a$10$dFOKX0C4JzBvb8icnDr5c.pac7mJO8qPmqLgGiPbSf261G3ZqPLmC",
+      "id": 1
+    }
+  ],
+  "lists": []
+}
