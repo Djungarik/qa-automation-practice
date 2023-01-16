@@ -18,7 +18,7 @@ export const login = (email: string, password: string) => {
   cy.visit("/");
   cy.get("[data-cy=login-menu]").click();
   cy.get("[data-cy=login-email]").type(email);
-  cy.get("[data-cy=login-password]").type(`${password}`);
+  cy.get("[data-cy=login-password]").type(password);
   cy.get("[data-cy=login]").click();
   cy.location("pathname").should("eq", "/");
 };
