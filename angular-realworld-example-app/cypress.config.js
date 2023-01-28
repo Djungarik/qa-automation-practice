@@ -6,8 +6,6 @@ module.exports = defineConfig({
   video: false,
 
   env: {
-    username: "bereznoy.timyr@gmail.com",
-    password: "3110200231887Befezda",
     apiUrl: "https://api.realworld.io/api/",
   },
 
@@ -34,6 +32,16 @@ module.exports = defineConfig({
       // }
       // const file = config.env.configFile;
       // return getConfigurationByFile(file);
+
+      const username = process.env.DB_USERNAME;
+      const password = process.env.PASSWORD;
+
+      if (!password) {
+        throw new Error("missing PASSWORD process environment variable");
+      }
+
+      config.env = { username, password };
+      return config;
     },
 
     baseUrl: "http://localhost:4200",
