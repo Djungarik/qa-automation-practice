@@ -17,7 +17,9 @@
     "mochawesome:merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && npx marge mochawesome.json",
     "cypress:run": "npx cypress run",
     "cypress:run_qa": "npx cypress run --env configFile=qa",
-    "cypress:e2e": "start-test start http://localhost:4200 cypress:run"
+    "cypress:e2e": "start-test start http://localhost:4200 cypress:run",
+    "cy:open_dev": "npx cypress open --env username=dev@gmail.com,password=dev1234",
+    "cy:open_process": "npx cypress open --env username=$DB_USERNAME,password=$PASSWORD"
   },
   "pre-commit": [
     "lint"
